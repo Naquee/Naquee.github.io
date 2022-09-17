@@ -3,6 +3,10 @@ import { useContext, useState } from 'react'
 // import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
 // import MenuIcon from '@material-ui/icons/Menu'
 // import CloseIcon from '@material-ui/icons/Close'
+
+import { BsFillMoonFill,BsFillBrightnessHighFill,BsFillBackspaceReverseFill } from "react-icons/bs";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 import { ThemeContext } from '../../contexts/theme'
 import { projects, skills, contact } from '../../portfolio'
 import './Navbar.css'
@@ -16,7 +20,7 @@ const Navbar = () => {
   const toggleNavList = () => setShowNavList(!showNavList)
 
   return (
-    <nav className='center nav'>
+    <nav className='center_nav'>
       <ul
         style={{ display: showNavList ? 'flex' : null }}
         className='nav__list'
@@ -59,21 +63,24 @@ const Navbar = () => {
       </ul>
 
       <button
+      style={{fontSize:"25px",paddingBottom:"3rem"}}
+     
         type='button'
         onClick={toggleTheme}
         className='btn btn--icon nav__theme'
         aria-label='toggle theme'
       >
-        {/* {themeName === 'dark' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />} */}
+        {themeName === 'dark' ? <BsFillBrightnessHighFill/> : <BsFillMoonFill />}
       </button>
-
+      
       <button
+      style={{fontSize:"22px",zIndex:"-1"}}
         type='button'
         onClick={toggleNavList}
         className='btn btn--icon nav__hamburger'
         aria-label='toggle navigation'
       >
-        {/* {showNavList ? <CloseIcon /> : <MenuIcon />} */}
+        {showNavList ? <BsFillBackspaceReverseFill /> : <GiHamburgerMenu />}
       </button>
     </nav>
   )

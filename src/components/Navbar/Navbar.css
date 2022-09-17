@@ -1,3 +1,18 @@
+.center_nav{
+  position: relative;
+  position: inherit;
+  position: fixed;
+  /* background-color: blue; */
+  width: 100%;
+  /* background-color: white; */
+  display: flex;
+   margin-top: -3rem;
+  height: 5rem;
+  padding-top: 1rem;
+  font-size: 22px;
+
+}
+
 .nav__list {
   margin-right: 1.5em;
   display: flex;
@@ -37,3 +52,5 @@
     margin-left: 0.8em;
   }
 }
+
+

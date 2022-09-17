@@ -1,6 +1,9 @@
 import uniqid from 'uniqid'
 // import GitHubIcon from '@material-ui/icons/GitHub'
 // import LaunchIcon from '@material-ui/icons/Launch'
+
+import { BsGithub} from "react-icons/bs";
+import {BsFillArrowUpRightCircleFill} from "react-icons/bs";
 import './ProjectContainer.css'
 // import './ProjectContainer.css'
 
@@ -24,25 +27,29 @@ const ProjectContainer = ({ project }) => (
       </ul>
     )}
 
-    {/* {project.sourceCode && (
-      <a
+    {project.sourceCode && (
+      <a 
+      style={{fontSize:"30px"}}
         href={project.sourceCode}
         aria-label='source code'
         className='link link--icon'
+        target="_blank"
       >
-        <GitHubIcon />
+        <BsGithub />
       </a>
-    )} */}
+    )}
 
-    {/* {project.livePreview && (
+    {project.livePreview && (
       <a
+      style={{fontSize:"30px"}}
         href={project.livePreview}
         aria-label='live preview'
         className='link link--icon'
+        target="_blank"
       >
-        <LaunchIcon />
+        <BsFillArrowUpRightCircleFill />
       </a>
-    )} */}
+    )}
   </div>
 )
 

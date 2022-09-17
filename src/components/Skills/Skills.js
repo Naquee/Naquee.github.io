@@ -11,7 +11,8 @@ const Skills = () => {
       <ul className='skills__list'>
         {skills.map((skill) => (
           <li key={uniqid()} className='skills__list-item btn btn--plain'>
-            {skill}
+            <h5>{skill.name} </h5>
+            <img src={skill.url} alt="" />
           </li>
         ))}
       </ul>

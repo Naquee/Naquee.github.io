@@ -1,12 +1,11 @@
-// import GitHubIcon from '@material-ui/icons/GitHub'
-// import LinkedInIcon from '@material-ui/icons/LinkedIn'
-// import { FaGithub } from "react-icons/fa";
+
 import { FaGithub,FaLinkedin } from "react-icons/fa";
 import { about } from '../../portfolio'
 import './About.css'
+import Naquee_Resume from "./Naquee_Resume.pdf"
 
 
-// John Smith.
+// Created By Naquee
 
 const About = () => {
   const { name, role, description, resume, social } = about
@@ -32,7 +31,7 @@ const About = () => {
 
       <div className='about__contact center'>
         {resume && (
-          <a href="https://drive.google.com/file/d/1Ly0vJ4XistRY3dgWkBS3sW4tnivqMG3R/view?usp=sharing">
+          <a href={Naquee_Resume} download>
             <span type='button' className='btn btn--outline'>
               Resume
             </span>
@@ -43,9 +42,10 @@ const About = () => {
           <>
             {social.github && (
               <a style={{fontSize:"35px",color:"black" ,padding:".5rem"}}
-                href={social.github}
+                href={social.github} 
                 aria-label='github'
                 className='link link--icon'
+                target="_blank"
               >
                 <FaGithub/>
               </a>
@@ -56,6 +56,7 @@ const About = () => {
                 href={social.linkedin}
                 aria-label='linkedin'
                 className='link link--icon'
+                target="_blank"
               >
                 <FaLinkedin />
               </a>
