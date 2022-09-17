@@ -2,7 +2,7 @@ import { contact } from '../../portfolio'
 import './Contact.css'
 import { FaLinkedin } from "react-icons/fa";
 import { BsTelephoneFill } from "react-icons/bs";
-// import { MdEmail } from "react-icons/Mdemail";
+
 import { MdEmail } from "react-icons/md";
 
 
