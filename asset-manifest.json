@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.29560d1b.css",
-    "main.js": "/static/js/main.5d7941dd.js",
+    "main.css": "/static/css/main.0eb09ac8.css",
+    "main.js": "/static/js/main.1910a9e7.js",
     "static/media/Naquee_Resume.pdf": "/static/media/Naquee_Resume.6cd7462862a4b52810f6.pdf",
     "index.html": "/index.html",
-    "main.29560d1b.css.map": "/static/css/main.29560d1b.css.map",
-    "main.5d7941dd.js.map": "/static/js/main.5d7941dd.js.map"
+    "main.0eb09ac8.css.map": "/static/css/main.0eb09ac8.css.map",
+    "main.1910a9e7.js.map": "/static/js/main.1910a9e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.29560d1b.css",
-    "static/js/main.5d7941dd.js"
+    "static/css/main.0eb09ac8.css",
+    "static/js/main.1910a9e7.js"
   ]
 }
